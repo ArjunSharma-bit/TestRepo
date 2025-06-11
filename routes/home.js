@@ -3,7 +3,7 @@ const router=express.Router()
 const path = require('path')
 
 router.get('/', (req,res) =>{
-    res.json([{name:'jesus'}])
+    res.sendFile(path.resolve(__dirname,'../public/navbar.html'))
 })
 
 module.exports = router
